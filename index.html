@@ -93,6 +93,34 @@
     font-weight: bold;
     color: #b3261e;
   }
+  .tipsbanner {
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #d8322a, #b3261e);
+    color: #fff;
+    border-radius: 12px;
+    margin-top: 16px;
+    padding: 16px 18px;
+    box-shadow: 0 3px 10px rgba(179,38,30,0.35);
+    animation: pulse 2s infinite;
+  }
+  .tipsbanner .big {
+    font-size: 1.15em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tipsbanner .sub {
+    font-size: 0.85em;
+    margin-top: 6px;
+    opacity: 0.95;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 3px 10px rgba(179,38,30,0.35); }
+    50% { box-shadow: 0 3px 18px rgba(179,38,30,0.6); }
+    100% { box-shadow: 0 3px 10px rgba(179,38,30,0.35); }
+  }
   footer {
     text-align: center;
     font-size: 0.75em;
@@ -112,6 +140,11 @@
 <div class="updated">2026年7月29日時点の情報です。最新状況は各リンク先でご確認ください。</div>
 
 <div class="container">
+
+  <a class="tipsbanner" href="./tips.html">
+    <div class="big">📖 今すぐ読んで：命を守るお役立ち情報 →</div>
+    <div class="sub">熱中症・血栓症（エコノミークラス症候群）予防、断水トイレの使い方、り災証明のコツなど</div>
+  </a>
 
   <div class="section urgent">
     <h2><span class="icon">🚨</span>緊急時</h2>
@@ -232,11 +265,6 @@
       <li><a class="link" href="https://www.pref.kumamoto.jp/soshiki/40/1700.html" target="_blank">熊本県 震災後のこころのケアについて
         <span class="desc">電話相談：熊本こころの電話 096-285-6688（11:00〜18:30）</span></a></li>
     </ul>
-  </div>
-
-  <div class="section" style="text-align:center;">
-    <a class="link" href="./tips.html" style="background:#fff3f2; border:1px solid #f3b8b4; color:#b3261e; font-weight:bold;">📖 お役立ち情報・豆知識ページへ
-      <span class="desc" style="color:#b3261e;">熱中症・血栓症予防、断水中のトイレ、り災証明のコツなど</span></a>
   </div>
 
 </div>
